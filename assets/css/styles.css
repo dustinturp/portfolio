@@ -1,0 +1,407 @@
+:root {
+    --primary-color: rgb(72, 117, 157);
+    --secondary-color: rgb(187, 230, 127);
+    --tertiary-color: rgb(137, 122, 159);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header section start */
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    background-position: 80%;
+    z-index: 9999;
+
+}
+
+header a {
+    /* remove underline from linked text */
+    text-decoration: none; 
+    color: var(--tertiary-color);
+}
+header nav {
+    margin: 7px  0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li{
+    display:inline;
+}
+header nav ul li a {
+    /* space header options */
+    padding: 10px 15px;
+    font-weight: normal;
+    font-size: 20px;
+    
+}
+header nav ul li a:hover {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+ul {
+    /* remove bullets from the list */
+    list-style-type: none;
+
+}
+/* header section end */
+
+/* hero img */
+.hero {
+    background-image: url("../img/utah.JPG");
+    max-width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    /* filter: opacity(70%); */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    height: 650px;
+}
+.hero h1{
+    font-size: 52px;
+    width: 100%;
+    /* background:rgba(0, 0, 0, 0.5);
+    border-radius: 50px 50px 0 0; */
+    
+    /* filter: opacity(100%); */
+    
+    /* flex: auto; */   
+}
+.hero h2 {
+    font-size: 30px;
+    width: 100%;
+}
+
+.page-title {
+    background:rgba(250, 244, 244, .4);
+    border-radius: 15px 50px;
+    padding: 20px;
+
+}
+/* hero section end */
+
+
+/* section titles */
+.section-title-container {
+    display: flex;
+    /* flex: 12; */
+    /* width: 100%; */
+    /* text-align: center; */
+}
+
+.section-title {
+    font-size: 46px;
+    width: 100%;
+    text-align: center;
+
+}
+
+/* about me section */
+#about-me {
+    background-color: var(--primary-color);
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    padding: 20px;
+}
+
+.column-flow {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    align-items: center;
+
+}
+
+.about-me-img {
+    background-image: url("../img/dt_seattle.jpg");
+    border-radius: 50%;
+    border: 2px solid wheat;
+    background-size: cover;
+    justify-self: center;
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+}
+
+.about-me-text {
+    display: flex;
+    flex: 2 30%;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.about-me-text a {
+    
+}
+/* end about me */
+
+/* project section */
+#projects {
+    padding: 20px;
+    background-color: var(--tertiary-color);
+}
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    display: inline-flex;
+    text-align: center;
+
+}
+
+.project {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 2 50%;
+    align-content: center;
+    
+}
+.project a {
+
+}
+
+.project h3 {
+    text-align: center;
+    padding: 20px;  
+}
+/* figure out way to only add opacity to img and not text */
+.prj-img {
+    /* base color if no images load */
+    /* background: rgba(0,0,255,0.5); */
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;  
+}
+
+.prj-img:hover {
+    /* remove filler image later  */
+    /* background: rgba(0,0,255,0.2) url("../img/lm_prj_img.png") */
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    /* transition: opacity 1s ease-in-out; */
+    filter: grayscale(40%);
+    /* filter: drop-shadow(16px 16px 20px blue); */
+    
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    /* flex: 12 100%; */
+
+}
+
+.project-text {
+    /* flex: 1 100%; */
+    padding: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0%;
+    height: 350px;
+    width: 350px;
+}
+
+.project-text:hover {
+    opacity: 100%;
+    color: antiquewhite;
+    transition: opacity 1s ease-in-out;
+    background: rgba(16, 54, 57, 0.5);
+    border-radius: 50%;
+}
+
+
+#landmarks-img {
+    /* background-image: url("../img/lm_prj_img.png"); */
+    background:rgba(0,0,255,0.9) url("../img/lm_prj_img.png");
+    /* background:red url("../img/lm_prj_img.png"); */
+    background-size: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%; 
+}
+
+#landmarks-img:hover {
+    /* height: 350px;
+    width: 350px; */
+    /* border-radius: 50%; */
+    /* opacity: 45%; */
+    filter: grayscale(40%);
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+#calls-to-service:hover{
+    color: antiquewhite;
+    background: rgba(16, 54, 57, 0.9);
+    padding-top: 80px;
+
+} 
+
+#calls_img {
+    background:rgba(0,0,255,0.6) url("../img/calls_serv.png");
+    background-size: cover;
+    filter: blur(0); 
+}
+
+#calls_img:hover {
+    /* background: rgba(60, 219, 230, 0.4); */
+    filter: drop-shadow(0 0 0.75rem rgb(160, 19, 156));
+    
+    /* filter: blur(4px);
+    transition: blur 2s; */
+}
+#meet-me-outdoors-img {
+    background:rgba(0,0,255,0.6) url("../img/outdoors.png");
+    background-size: cover;
+
+}
+
+#meet-me-outdoors-text:hover {
+    color: antiquewhite;
+    background: rgba(16, 54, 57, 0.9);
+    padding-top: 120px;
+}
+
+#meet-me-outdoors-img:hover {
+    filter: grayscale(40%);
+    filter: drop-shadow(0 0 0.75rem rgb(56, 182, 67));
+
+}
+
+#run-bud-img {
+    background:rgba(0,0,255,0.6) url("../img/run-bud.png");
+    background-size: cover;
+
+}
+
+#run-bud-img:hover {
+    filter: grayscale(40%);
+    filter: drop-shadow(0 0 0.75rem rgb(233, 170, 33));
+}
+
+#run-bud-text:hover {
+    background: rgba(16, 54, 57, 0.9);
+    padding-top: 140px;
+}
+
+#pedestrian-img {
+    background:rgba(0,0,255,0.6) url("../img/pedestrian-img.png");
+    background-size: cover;
+}
+
+#pedestrian-img:hover {
+    filter: grayscale(40%);
+    filter: drop-shadow(0 0 0.75rem rgb(238, 232, 46));
+}
+
+#pedestrian-text:hover {
+    background: rgba(16, 54, 57, 0.9);
+    padding-top: 125px;
+}
+
+/* end project section
+ 
+/* contact section */
+
+#contact-me h2  {
+    padding-top: 15px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-social {
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    /* flex: 1 20%; */
+    padding: 60px;
+}
+.contact-social h3 {
+    font-size: 20px;
+}
+
+.contact-social a {
+
+}
+.contact-social div{
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+
+}
+
+.contact-social img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+/* contact social end */
+
+@media screen and (max-width: 1680px) {
+    .project {
+        flex: 1 30%;
+
+    }
+}
+
+@media  screen and (max-width: 768) {
+    .hero {
+        height: 380px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    /* make hero height smaller */
+    .hero {
+        height: 300px;
+    }
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .page-title {
+        display: flex;
+    }
+
+
+}
