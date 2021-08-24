@@ -174,8 +174,13 @@ ul {
 
 .project h3 {
     text-align: center;
-    padding: 20px;  
+    padding: 20px;
 }
+
+.project a {
+    color: black; 
+}
+
 /* figure out way to only add opacity to img and not text */
 .prj-img {
     height: 350px;
